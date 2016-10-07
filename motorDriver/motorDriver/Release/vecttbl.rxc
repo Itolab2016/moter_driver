@@ -1,0 +1,5 @@
+-cpu=rx200
+-lang=c
+-output=obj="C:\WorkSpace\motorDriver\motorDriver\Release\vecttbl.obj"
+"C:\WorkSpace\motorDriver\motorDriver\vecttbl.c"
+-nologo

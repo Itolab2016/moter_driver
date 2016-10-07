@@ -1,0 +1,80 @@
+Optimizing Linkage Editor (V.10.02.00.000)        07-Oct-2016 20:13:15
+
+*** Options ***
+
+-subcommand=C:\WorkSpace\motorDriver\motorDriver\Debug\motorDriver.hlk
+-noprelink
+-rom=D=R,D_1=R_1,D_2=R_2
+-nomessage
+-list="C:\WorkSpace\motorDriver\motorDriver\Debug\motorDriver.map"
+-nooptimize
+-start=B_1,R_1,B_2,R_2,B,R,SU,SI/01000,PResetPRG/0FFFF8000,C_1,C_2,C,C$*,D_1,D_2,D,P,PIntPRG,W*,L/0FFFF8100,FIXEDVECT/0FFFFFFD0
+-nologo
+-input="C:\WorkSpace\motorDriver\motorDriver\Debug\dbsct.obj"
+-input="C:\WorkSpace\motorDriver\motorDriver\Debug\intprg.obj"
+-input="C:\WorkSpace\motorDriver\motorDriver\Debug\motorDriver.obj"
+-input="C:\WorkSpace\motorDriver\motorDriver\Debug\resetprg.obj"
+-input="C:\WorkSpace\motorDriver\motorDriver\Debug\sbrk.obj"
+-input="C:\WorkSpace\motorDriver\motorDriver\Debug\vecttbl.obj"
+-library="C:\WorkSpace\motorDriver\motorDriver\Debug\motorDriver.lib"
+-output="C:\WorkSpace\motorDriver\motorDriver\Debug\motorDriver.abs"
+-end
+
+*** Error information ***
+
+** L1100 (W) Cannot find "SU" specified in option "start"
+
+*** Mapping List ***
+
+SECTION                            START      END         SIZE   ALIGN
+
+B_1
+                                  00001000  0000103f        40   1
+R_1
+                                  00001040  00001040         0   1
+B_2
+                                  00001040  00001040         0   2
+R_2
+                                  00001040  00001040         0   2
+B
+                                  00001040  0000144f       410   4
+R
+                                  00001450  00001457         8   4
+SI
+                                  00001458  00001757       300   4
+PResetPRG
+                                  ffff8000  ffff8022        23   1
+C_1
+                                  ffff8100  ffff8100         0   1
+C_2
+                                  ffff8100  ffff8100         0   2
+C
+                                  ffff8100  ffff8117        18   4
+C$DSEC
+                                  ffff8118  ffff813b        24   4
+C$BSEC
+                                  ffff813c  ffff8153        18   4
+C$VECT
+                                  ffff8154  ffff8553       400   4
+D_1
+                                  ffff8554  ffff8554         0   1
+D_2
+                                  ffff8554  ffff8554         0   2
+D
+                                  ffff8554  ffff855b         8   4
+P
+                                  ffff855c  ffff89e1       486   1
+PIntPRG
+                                  ffff89e2  ffff8acb        ea   1
+W_1
+                                  ffff8acc  ffff8acc         0   1
+W_2
+                                  ffff8acc  ffff8acc         0   2
+W
+                                  ffff8acc  ffff8acc         0   4
+L
+                                  ffff8acc  ffff8aed        22   4
+$ADDR_C_FFFFFF80
+                                  ffffff80  ffffff83         4   1
+FIXEDVECT
+                                  ffffffd0  ffffffff        30   4

@@ -1,0 +1,5 @@
+-cpu=rx200
+-lang=c
+-output=obj="C:\WorkSpace\motorDriver\motorDriver\Release\sbrk.obj"
+"C:\WorkSpace\motorDriver\motorDriver\sbrk.c"
+-nologo
